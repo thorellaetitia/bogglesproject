@@ -149,6 +149,10 @@
   font-variant: small-caps;
   text-align: center;
 }
+
+#timer {
+  display: inline;
+}
 /* score */
 /* input liste */
 #list{
