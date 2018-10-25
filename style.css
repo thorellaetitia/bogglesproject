@@ -144,6 +144,11 @@
   width: 100px;
   height: 100px;
 }
+
+.carre {
+  font-variant: small-caps;
+  text-align: center;
+}
 /* score */
 /* input liste */
 #list{
