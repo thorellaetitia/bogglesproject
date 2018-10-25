@@ -9,7 +9,7 @@ function showAlert() {
   alert('Partie terminer');
 };
 /*timer  */
-$('#button').click(function timedText() {
+$('#button').click(function() {
     setTimeout(myTimeout1, 1000);
     setTimeout(myTimeout2, 2000);
     setTimeout(myTimeout3, 3000);
