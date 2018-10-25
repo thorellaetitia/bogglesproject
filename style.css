@@ -152,3 +152,6 @@
   height: 500px;
   display: inline-block;
 }
+#alert  {
+  display: none;
+}
