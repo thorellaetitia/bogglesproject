@@ -16,18 +16,19 @@ $('#button').click(function(){
   alphabetgenerate.push(alphabet[random]);
   $(this).children().text(alphabet[random]);
   });
+    console.log(alphabetgenerate);
 })
-
-console.log(alphabetgenerate);
 
 /*bouton */
 function showAlert(){
 $(document).ready(function() {
   alert('Partie terminé');
   alphabetgenerate.length = 0;
+  console.log(alphabetgenerate);
   $('#button').removeAttr('disabled');
 });
 };
+
 
 /*timer  */
 $('#button').click(function timedText() {
