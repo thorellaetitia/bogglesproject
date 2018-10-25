@@ -1,7 +1,7 @@
 /*bouton*/
 /*timer */
 /*plateau*/
-var tableau = ['GITHUB','MKDIR','RM','ADD','GIT','COMMIT','MERGE','CHECKOUT','BRANCH','MASTER','ORIGIN','PUSH','PULL','CLONE','REPOSITORY',
+var dictionnary = ['GITHUB','MKDIR','RM','ADD','GIT','COMMIT','MERGE','CHECKOUT','BRANCH','MASTER','ORIGIN','PUSH','PULL','CLONE','REPOSITORY',
 'HTML','IMG','SCRIPT','BODY','HEAD','DIV','SPAN','STRONG','BOLD','BR','FONT','META','STYLE','TABLE','TITLE','LINK','CLASS','ID','URL','FOOTER','HEADER','BUTTON','FORM','INPUT','SECTION','HREF','SRC','TYPE','VALUE','CAROUSEL','HTTP','CSS','ANIMATION','COLOR','BACKGROUND','DISPLAY','NONE','BLOCK','FLEX','PADDING','MARGIN','HEIGHT','WIDTH','TOP','BOTTOM','LEFT','RIGHT','BORDER','FIXED','BLACK','WHITE','RED','GREEN','YELLOW','BLUE','PINK','GREY','ORANGE','BROWN','PURPLE','SIZE','PYTHON','PHP','JQUERY','JAVA','JAVASCRIPT','JAVAEE','WORDPRESS','BOOTSTRAP','CONTAINER','ROW','MAIN','COL','MEDIA','CARD','RESPONSIVE','NAV','NAVBAR','TEXT','ROUNDED','DROPDOWN','FLUID','BORDERLESS','DARK','LIGHT','WARNING','DANGER','SUCESS','PRIMARY','SECONDARY','ALERT','BADGE','ITEM','DRUPAL','ANGULARJS','SCOPE','FUNCTION','NUMBER','FILTER','AJAX','SQL','MYSQL','ORACLE','JSP','VAR','XML','FLASH','NODEJS','ASP','ANOUSONE','CMS','JOOMLA','MAGENTA','LAURA','ROBIN','LUC','YASSINE','PRESTASHOP','RUBY','SASS','LESS','CDN','PARALLAX']
 $('input').keypress(function(event){
   var keyCode = event.keyCode && event.which;
@@ -9,7 +9,7 @@ $('input').keypress(function(event){
   if(keyCode == '13') {
     //Si la le mot rentrer dans l'input correspond à une valeur du tableau ...//
     var bingo = dictionnary[dictionnary.indexOf(valeur)];
-    $('#list').text(bingo)
+    $('#list').text(bingo);
   };
 // };
 });
@@ -21,31 +21,28 @@ alphabetgenerate = [];
 var timeoutID;
 
 $(document).ready(function() {
-$('#button').click(function(){
-  $(this).attr('disabled', 'true');
-  timeoutID = window.setTimeout(showAlert, 2000);
-  $(".carre").each(function lettre() {
-  random = Math.ceil(Math.random() * 41);
-  alphabet[random];
-  alphabetgenerate.push(alphabet[random]);
-  $(this).children().text(alphabet[random]);
-  });
+  $('#button').click(function(){
+    $(this).attr('disabled', 'true');
+    timeoutID = window.setTimeout(showAlert, 2000);
+    $(".carre").each(function lettre() {
+      random = Math.ceil(Math.random() * 41);
+      alphabet[random];
+      alphabetgenerate.push(alphabet[random]);
+      $(this).children().text(alphabet[random]);
+    });
     console.log(alphabetgenerate);
-})
-
-/*bouton */
-function showAlert(){
-$(document).ready(function() {
-  alert('Partie terminé');
-  alphabetgenerate.length = 0;
-  console.log(alphabetgenerate);
-  $('#button').removeAttr('disabled');
-});
-};
-
-
-/*timer  */
-$('#button').click(function timedText() {
+  })
+  /*bouton */
+  function showAlert(){
+    $(document).ready(function() {
+      alert('Partie terminé');
+      alphabetgenerate.length = 0;
+      console.log(alphabetgenerate);
+      $('#button').removeAttr('disabled');
+    });
+  };
+  /*timer  */
+  $('#button').click(function timedText() {
     setTimeout(myTimeout1, 1000);
     setTimeout(myTimeout2, 2000);
     setTimeout(myTimeout3, 3000);
@@ -136,277 +133,277 @@ $('#button').click(function timedText() {
     setTimeout(myTimeout88, 88000);
     setTimeout(myTimeout89, 89000);
     setTimeout(myTimeout90, 90000);
-});
-function myTimeout1() {
+  });
+  function myTimeout1() {
     document.getElementById("timer").innerHTML = "89 secondes";
-}
-function myTimeout2() {
+  }
+  function myTimeout2() {
     document.getElementById("timer").innerHTML = "88 secondes";
-}
-function myTimeout3() {
+  }
+  function myTimeout3() {
     document.getElementById("timer").innerHTML = "87 secondes";
-}
-function myTimeout4() {
+  }
+  function myTimeout4() {
     document.getElementById("timer").innerHTML = "86 secondes";
-}
-function myTimeout5() {
+  }
+  function myTimeout5() {
     document.getElementById("timer").innerHTML = "85 secondes";
-}
-function myTimeout6() {
+  }
+  function myTimeout6() {
     document.getElementById("timer").innerHTML = "84 secondes";
-}
-function myTimeout7() {
+  }
+  function myTimeout7() {
     document.getElementById("timer").innerHTML = "83 secondes";
-}
-function myTimeout8() {
+  }
+  function myTimeout8() {
     document.getElementById("timer").innerHTML = "82 secondes";
-}
-function myTimeout9() {
+  }
+  function myTimeout9() {
     document.getElementById("timer").innerHTML = "81 secondes";
-}
-function myTimeout10() {
+  }
+  function myTimeout10() {
     document.getElementById("timer").innerHTML = "80 secondes";
-}
-function myTimeout11() {
+  }
+  function myTimeout11() {
     document.getElementById("timer").innerHTML = "79 secondes";
-}
-function myTimeout12() {
+  }
+  function myTimeout12() {
     document.getElementById("timer").innerHTML = "78 secondes";
-}
-function myTimeout13() {
+  }
+  function myTimeout13() {
     document.getElementById("timer").innerHTML = "77 secondes";
-}
-function myTimeout14() {
+  }
+  function myTimeout14() {
     document.getElementById("timer").innerHTML = "76 secondes";
-}
-function myTimeout15() {
+  }
+  function myTimeout15() {
     document.getElementById("timer").innerHTML = "75 secondes";
-}
-function myTimeout16() {
+  }
+  function myTimeout16() {
     document.getElementById("timer").innerHTML = "74 secondes";
-}
-function myTimeout17() {
+  }
+  function myTimeout17() {
     document.getElementById("timer").innerHTML = "73 secondes";
-}
-function myTimeout18() {
+  }
+  function myTimeout18() {
     document.getElementById("timer").innerHTML = "72 secondes";
-}
-function myTimeout19() {
+  }
+  function myTimeout19() {
     document.getElementById("timer").innerHTML = "71 secondes";
-}
-function myTimeout20() {
+  }
+  function myTimeout20() {
     document.getElementById("timer").innerHTML = "70 secondes";
-}
-function myTimeout21() {
+  }
+  function myTimeout21() {
     document.getElementById("timer").innerHTML = "69 secondes";
-}
-function myTimeout22() {
+  }
+  function myTimeout22() {
     document.getElementById("timer").innerHTML = "68 secondes";
-}
-function myTimeout23() {
+  }
+  function myTimeout23() {
     document.getElementById("timer").innerHTML = "67 secondes";
-}
-function myTimeout24() {
+  }
+  function myTimeout24() {
     document.getElementById("timer").innerHTML = "66 secondes";
-}
-function myTimeout25() {
+  }
+  function myTimeout25() {
     document.getElementById("timer").innerHTML = "65 secondes";
-}
-function myTimeout26() {
+  }
+  function myTimeout26() {
     document.getElementById("timer").innerHTML = "64 secondes";
-}
-function myTimeout27() {
+  }
+  function myTimeout27() {
     document.getElementById("timer").innerHTML = "63 secondes";
-}
-function myTimeout28() {
+  }
+  function myTimeout28() {
     document.getElementById("timer").innerHTML = "62 secondes";
-}
-function myTimeout29() {
+  }
+  function myTimeout29() {
     document.getElementById("timer").innerHTML = "61 secondes";
-}
-function myTimeout30() {
+  }
+  function myTimeout30() {
     document.getElementById("timer").innerHTML = "60 secondes";
-}
-function myTimeout31() {
+  }
+  function myTimeout31() {
     document.getElementById("timer").innerHTML = "59 secondes";
-}
-function myTimeout32() {
+  }
+  function myTimeout32() {
     document.getElementById("timer").innerHTML = "58 secondes";
-}
-function myTimeout33() {
+  }
+  function myTimeout33() {
     document.getElementById("timer").innerHTML = "57 secondes";
-}
-function myTimeout34() {
+  }
+  function myTimeout34() {
     document.getElementById("timer").innerHTML = "56 secondes";
-}
-function myTimeout35() {
+  }
+  function myTimeout35() {
     document.getElementById("timer").innerHTML = "55 secondes";
-}
-function myTimeout36() {
+  }
+  function myTimeout36() {
     document.getElementById("timer").innerHTML = "54 secondes";
-}
-function myTimeout37() {
+  }
+  function myTimeout37() {
     document.getElementById("timer").innerHTML = "53 secondes";
-}
-function myTimeout38() {
+  }
+  function myTimeout38() {
     document.getElementById("timer").innerHTML = "52 secondes";
-}
-function myTimeout39() {
+  }
+  function myTimeout39() {
     document.getElementById("timer").innerHTML = "51 secondes";
-}
-function myTimeout40() {
+  }
+  function myTimeout40() {
     document.getElementById("timer").innerHTML = "50 secondes";
-}
-function myTimeout41() {
+  }
+  function myTimeout41() {
     document.getElementById("timer").innerHTML = "49 secondes";
-}
-function myTimeout42() {
+  }
+  function myTimeout42() {
     document.getElementById("timer").innerHTML = "48 secondes";
-}
-function myTimeout43() {
+  }
+  function myTimeout43() {
     document.getElementById("timer").innerHTML = "47 secondes";
-}
-function myTimeout44() {
+  }
+  function myTimeout44() {
     document.getElementById("timer").innerHTML = "46 secondes";
-}
-function myTimeout45() {
+  }
+  function myTimeout45() {
     document.getElementById("timer").innerHTML = "45 secondes";
-}
-function myTimeout46() {
+  }
+  function myTimeout46() {
     document.getElementById("timer").innerHTML = "44 secondes";
-}
-function myTimeout47() {
+  }
+  function myTimeout47() {
     document.getElementById("timer").innerHTML = "43 secondes";
-}
-function myTimeout48() {
+  }
+  function myTimeout48() {
     document.getElementById("timer").innerHTML = "42 secondes";
-}
-function myTimeout49() {
+  }
+  function myTimeout49() {
     document.getElementById("timer").innerHTML = "41 secondes";
-}
-function myTimeout50() {
+  }
+  function myTimeout50() {
     document.getElementById("timer").innerHTML = "40 secondes";
-}
-function myTimeout51() {
+  }
+  function myTimeout51() {
     document.getElementById("timer").innerHTML = "39 secondes";
-}
-function myTimeout52() {
+  }
+  function myTimeout52() {
     document.getElementById("timer").innerHTML = "38 secondes";
-}
-function myTimeout53() {
+  }
+  function myTimeout53() {
     document.getElementById("timer").innerHTML = "37 secondes";
-}
-function myTimeout54() {
+  }
+  function myTimeout54() {
     document.getElementById("timer").innerHTML = "36 secondes";
-}
-function myTimeout55() {
+  }
+  function myTimeout55() {
     document.getElementById("timer").innerHTML = "35 secondes";
-}
-function myTimeout56() {
+  }
+  function myTimeout56() {
     document.getElementById("timer").innerHTML = "34 secondes";
-}
-function myTimeout57() {
+  }
+  function myTimeout57() {
     document.getElementById("timer").innerHTML = "33 secondes";
-}
-function myTimeout58() {
+  }
+  function myTimeout58() {
     document.getElementById("timer").innerHTML = "32 secondes";
-}
-function myTimeout59() {
+  }
+  function myTimeout59() {
     document.getElementById("timer").innerHTML = "31 secondes";
-}
-function myTimeout60() {
+  }
+  function myTimeout60() {
     document.getElementById("timer").innerHTML = "30 secondes";
-}
-function myTimeout61() {
+  }
+  function myTimeout61() {
     document.getElementById("timer").innerHTML = "29 secondes";
-}
-function myTimeout62() {
+  }
+  function myTimeout62() {
     document.getElementById("timer").innerHTML = "28 secondes";
-}
-function myTimeout63() {
+  }
+  function myTimeout63() {
     document.getElementById("timer").innerHTML = "27 secondes";
-}
-function myTimeout64() {
+  }
+  function myTimeout64() {
     document.getElementById("timer").innerHTML = "26 secondes";
-}
-function myTimeout65() {
+  }
+  function myTimeout65() {
     document.getElementById("timer").innerHTML = "25 secondes";
-}
-function myTimeout66() {
+  }
+  function myTimeout66() {
     document.getElementById("timer").innerHTML = "24 secondes";
-}
-function myTimeout67() {
+  }
+  function myTimeout67() {
     document.getElementById("timer").innerHTML = "23 secondes";
-}
-function myTimeout68() {
+  }
+  function myTimeout68() {
     document.getElementById("timer").innerHTML = "22 secondes";
-}
-function myTimeout69() {
+  }
+  function myTimeout69() {
     document.getElementById("timer").innerHTML = "21 secondes";
-}
-function myTimeout70() {
+  }
+  function myTimeout70() {
     document.getElementById("timer").innerHTML = "20 secondes";
-}
-function myTimeout71() {
+  }
+  function myTimeout71() {
     document.getElementById("timer").innerHTML = "19 secondes";
-}
-function myTimeout72() {
+  }
+  function myTimeout72() {
     document.getElementById("timer").innerHTML = "18 secondes";
-}
-function myTimeout73() {
+  }
+  function myTimeout73() {
     document.getElementById("timer").innerHTML = "17 secondes";
-}
-function myTimeout74() {
+  }
+  function myTimeout74() {
     document.getElementById("timer").innerHTML = "16 secondes";
-}
-function myTimeout75() {
+  }
+  function myTimeout75() {
     document.getElementById("timer").innerHTML = "15 secondes";
-}
-function myTimeout76() {
+  }
+  function myTimeout76() {
     document.getElementById("timer").innerHTML = "14 secondes";
-}
-function myTimeout77() {
+  }
+  function myTimeout77() {
     document.getElementById("timer").innerHTML = "13 secondes";
-}
-function myTimeout78() {
+  }
+  function myTimeout78() {
     document.getElementById("timer").innerHTML = "12 secondes";
-}
-function myTimeout79() {
+  }
+  function myTimeout79() {
     document.getElementById("timer").innerHTML = "11 secondes";
-}
-function myTimeout80() {
+  }
+  function myTimeout80() {
     document.getElementById("timer").innerHTML = "10 secondes";
-}
-function myTimeout81() {
+  }
+  function myTimeout81() {
     document.getElementById("timer").innerHTML = "9 secondes";
-}
-function myTimeout82() {
+  }
+  function myTimeout82() {
     document.getElementById("timer").innerHTML = "8 secondes";
-}
-function myTimeout83() {
+  }
+  function myTimeout83() {
     document.getElementById("timer").innerHTML = "7 secondes";
-}
-function myTimeout84() {
+  }
+  function myTimeout84() {
     document.getElementById("timer").innerHTML = "6 secondes";
-}
-function myTimeout85() {
+  }
+  function myTimeout85() {
     document.getElementById("timer").innerHTML = "5 secondes";
-}
-function myTimeout86() {
+  }
+  function myTimeout86() {
     document.getElementById("timer").innerHTML = "4 secondes";
-}
-function myTimeout87() {
+  }
+  function myTimeout87() {
     document.getElementById("timer").innerHTML = "3 secondes";
-}
-function myTimeout88() {
+  }
+  function myTimeout88() {
     document.getElementById("timer").innerHTML = "2 secondes";
-}
-function myTimeout89() {
+  }
+  function myTimeout89() {
     document.getElementById("timer").innerHTML = "1 secondes";
-}
-function myTimeout90() {
+  }
+  function myTimeout90() {
     document.getElementById("timer").innerHTML = "0 secondes";
-};
+  };
 })
 // on recupere une entrée aléatoire du tableau
 /*score*/
